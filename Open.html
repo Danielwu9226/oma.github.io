@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML and CSS Image Example</title>   
+  <link rel="stylesheet" href="styles.css">   <!-- how we connect css and html -->
+  
+    <!-- Background colors -->
+    <section data-color="white">
+      <nav>
+        <a href="./about.html">About Me</a>
+        <a href="./service.html">Service</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </section>
+   
+    <section data-color="green">
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  
+      <script type='text/javascript'>
+          function loadMapScenario() {
+              var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                  credentials: 'Your_Bing_Maps_API_Key'
+              });
+  
+              var searchManager = new Microsoft.Maps.Search.SearchManager(map);
+  
+              document.getElementById('searchButton').onclick = function () {
+                  var query = document.getElementById('searchQuery').value;
+                  if (query) {
+                      var searchRequest = {
+                          where: query,
+                          callback: function (results, userData) {
+                              if (results && results.results.length > 0) {
+                                  var location = results.results[0].location;
+                                  map.setView({ center: location, zoom: 10 });
+                              }
+                          }
+                      };
+                      searchManager.geocode(searchRequest);
+                  }
+              };
+          }
+      </script>
+  
+      <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=loadMapScenario' async defer></script>
+  </head>
+  <body>
+  
+  
+      <input type="text" id="searchQuery" placeholder="Enter a location..." />
+      <button id="searchButton">Search</button>
+      <div id="myMap" style="position:relative;width:100%;height:500px;"></div>
+  
+  
+
+
+    </section>
+    <section data-color="purple">
+      <h1 class="welcome">Welcome to Our Website!</h1>
+  <p>Check out these beautiful images:</p>
+  <div class="image-container">
+    <img class="image" src="/Users/danielwu/STEM_OMA/harvest-stream-parallelogram/OpenWeb/pics/image1.jpg" alt="Image 1">
+    <!-- <div class="middle">
+      <div class="text">OMAA</div>
+    </div> -->
+    <img class = "image" src="/Users/danielwu/STEM_OMA/harvest-stream-parallelogram/OpenWeb/pics/image2.jpg" alt="Image 2">
+    <img class = "image" src="/Users/danielwu/STEM_OMA/harvest-stream-parallelogram/OpenWeb/pics/image3.jpg" alt="Image 3">
+  </div>
+
+    </section>
+    <section data-color="yellow">
+       <!-- Adding button inside the link tag -->
+       <a href='https://ide.geeksforgeeks.org/'>
+      <button class="GFG">
+        Click Here
+      </button>
+      </a>
+
+    </section>
+    
+    
+    <section data-color="blue">
+
+      <a href = "https://www.adobe.com/ca/acrobat/acrobat-pro.html">
+        <button>  </button>
+      </a>
+      
+    </section>
+
+
+    <section data-color="white">
+      <h2>Visit PewDiePie </h2>
+<a href = "www.google.ca">
+  <button>
+    click here
+  </button>
+</a>
+
+<div id="ytplayer"></div>
+
+
+
+<!-- Replace 'https://www.youtube.com/embed/VIDEO_ID' with the actual YouTube video URL -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B6rcw9J3DKQ" frameborder="0" allowfullscreen></iframe>
+
+<p> Lilly was a super talented youtubeer and when I first saw her on Youtube, I was 
+  inspired by her enthusiasm and creativty.
+</p>
+
+
+<p>My name is Berwin, and I love programming</p>
+
+<img src="" alt="">
+<a href=""></a>
+<p>
+</p>
+
+<p> i love eric's stem project, and hes super talented <br> I also like Mao's website!
+    </section>
+  
+
+
+    <button type="button" class="btn btn-primary">Primary</button>
+
+  </body>
+  </html>
+  
+
+
+
+
